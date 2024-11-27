@@ -7,7 +7,9 @@ The Medication Management Program allows users to manage patient records, includ
 ## Program Specifications
 
 ### Purpose:
+
 Design a modular program that will load patient data from a file at the start of the program. It should allow a user to:
+
 - Add patient records to a file
 - View all patient records
 - Search for a specific patient
@@ -21,11 +23,10 @@ The program will start by welcoming the user and providing a text-based menu for
   - Enter patient name, ID, and medications.
   - Add the patient to the `vector<Patient>`.
   - Sort the vector.
-  
 - **Viewing All Patients**:
   - Display all patients in the sorted order (alphabetically or by ID).
-  
 - **Searching for a Patient**:
+
   - Prompt the user for the name or ID.
   - Perform binary search to locate the patients (start with linear search then optimize with binary search).
   - Display the medications if the patient is found.
@@ -35,33 +36,38 @@ The program will start by welcoming the user and providing a text-based menu for
   - Load the data back into the vector and sort it.
 
 ### Data Types and Algorithms:
+
 This program will primarily use the **vector** data type and will include searching and sorting algorithms.
 
 ## To-Do List
 
 - [x] **Initialize Program**
-  x Display a welcome message.
-  x Provide a text-based menu for user navigation.
-  
+      - Display a welcome message.
+      - Provide a text-based menu for user navigation.
 - [ ] **Add Patient Record**
+
   - Prompt the user to enter a patient's name, ID, and medications.
   - Add the patient to the `vector<Patient>`.
   - Sort the `vector` of patients.
 
 - [ ] **View All Patient Records**
+
   - Display all patient records in sorted order (either by name or ID).
   - Format the output to show patient details and their medications.
 
 - [ ] **Search for a Patient**
+
   - Prompt the user to enter a patient's name or ID.
   - Perform a linear search to find the patient.
   - Eventually, implement a binary search for faster results (after sorting patients).
   - If found, display the patient's details and their medications.
 
 - [ ] **Save Records to a File**
+
   - Implement functionality to save the sorted `vector<Patient>` to a file.
 
 - [ ] **Load Records from a File**
+
   - Implement functionality to load patient records from a file and populate the `vector<Patient>`.
   - Ensure that the records are sorted after loading.
 
@@ -89,3 +95,4 @@ struct Patient {
 
 
 
+```
