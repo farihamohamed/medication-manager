@@ -88,13 +88,4 @@ struct Patient {
 };
 
 
-### **How to Preview Markdown:**
-- If you’re using **GitHub**, simply commit the `README.md` file, and it will automatically render on your repository page.
-- If you’re using a **text editor** (like VS Code), you can preview Markdown by opening the file and selecting **Markdown Preview** (VS Code has this built-in).
-
----
-
-That’s it! You now have a working to-do list with checkboxes and a `README.md` that will be rendered properly on GitHub.
-
-Let me know if you need more help!
 
