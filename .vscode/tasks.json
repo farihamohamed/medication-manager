@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "C++: clang++ build active file",
+      "type": "shell",
+      "command": "/usr/bin/clang++",
+      "args": [
+        "-g",
+        "main.cpp", // Or "./main.cpp" depending on your setup
+        "-o",
+        "${fileDirname}/main"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"],
+      "detail": "Generated task for compiling C++",
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    },
+    {
+      "label": "run",
+      "type": "shell",
+      "command": "${fileDirname}/${fileBasenameNoExtension}",
+      "group": "test",
+      "dependsOn": "build and run"
+    }
+  ]
+}

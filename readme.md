@@ -39,9 +39,9 @@ This program will primarily use the **vector** data type and will include search
 
 ## To-Do List
 
-- [ ] **Initialize Program**
-  - Display a welcome message.
-  - Provide a text-based menu for user navigation.
+- [x] **Initialize Program**
+  x Display a welcome message.
+  x Provide a text-based menu for user navigation.
   
 - [ ] **Add Patient Record**
   - Prompt the user to enter a patient's name, ID, and medications.

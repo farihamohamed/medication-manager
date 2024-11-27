@@ -15,7 +15,6 @@ using namespace std;
 // Welcome User 
 
 int welcomeUser(); 
-
 // Add patient 
 
 void addPatient();
@@ -24,7 +23,7 @@ void addPatient();
 
 void viewAllPatients();
 
-struct Medication{
+/*struct Medication{
         string name;
         string dosage;
         string startDate;
@@ -46,13 +45,13 @@ struct Medication{
     
     };
 
-
+*/
 
 
 int main()
 {
      
-  vector<Patient> patients = {
+ /*  vector<Patient> patients = {
         Patient("John" , "Doe", "12345", {
             Medication("Ibuprofen", "200mg", "2024-11-01"),
             Medication("Paracetamol", "500mg", "2024-11-05"),
@@ -69,11 +68,12 @@ int main()
             Medication("Albuterol", "90mcg", "2024-09-20"),
         }),
     };
-
-string search;
+ 
+// Linear Search 
+string search; // name entered by user 
 cout << "Please enter a name" << endl; 
 cin >> search; 
-bool found = false; 
+bool found = false; // flag used to check if name was found 
 int i = 0;
  while(!found && i < patients.size()){
      if(search == patients[i].firstname){ 
@@ -86,31 +86,12 @@ int i = 0;
  
  if(!found)
     cout << "We could not find this patient in our records" << endl;
-    
+   */  
    
- //  int userChoice = welcomeUser(); // this will capture the user's choice from the menu and help will be used to know which function to call
-
-   /*switch(userChoice){ 
-       case 1:
-            addPatient(); 
-            break;
-       case 2: 
-            cout << " Add Medication Record /This feature has not been added yet" << endl;
-            break;
-       case 3: 
-            cout << " Add Medication Record /This feature has not been added yet" << endl;
-            break;
-       case 4: 
-            cout << "View all records in patient records /This feature has not been added yet" << endl;
-            break;
-        
-        default: cout << "It looks like we don't have a user choice";
-            
-       
-   }
+  int userChoice = welcomeUser(); // this will capture the user's choice from the menu and help will be used to know which function to call
 
 
-*/
+
     return 0;
 }
 
@@ -133,10 +114,41 @@ int welcomeUser(){
       cout << "Please enter a number" << endl;
       cin >> userSelection;
     
-    }
+     }
+    
+    
     
     while((userSelection < 1) || (userSelection > 7));
     
+
+    switch(userSelection){ 
+       case 1:
+           cout << "Add patient / This feature has not been added yet" << endl;
+            //addPatient(); 
+            break;
+       case 2: 
+            cout << " Add Medication Record /This feature has not been added yet" << endl;
+            break;
+       case 3: 
+            cout << " View all records in patient records /This feature has not been added yet" << endl;
+            break;
+       case 4: 
+            cout << "Find a patient’s records /This feature has not been added yet" << endl;
+            break;
+        case 5: 
+            cout << "Save records to a file /This feature has not been added yet" << endl;
+            break;
+        case 6: 
+            cout << "Load records from a file /This feature has not been added yet" << endl;
+            break;
+        case 7: 
+            cout << "Exit // This feature has not been added yet" << endl;
+            break;
+        
+        default: cout << "It looks like we don't have a user choice";
+    }
+
+
     return userSelection;
 
     
