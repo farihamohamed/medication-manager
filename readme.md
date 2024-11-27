@@ -1,5 +1,42 @@
 # Medication Management Program
 
+## Project Description
+
+The Medication Management Program allows users to manage patient records, including their medication details. It supports operations such as adding new patients, viewing all patient records, searching for specific patients, and saving/loading data from a file.
+
+## Program Specifications
+
+### Purpose:
+Design a modular program that will load patient data from a file at the start of the program. It should allow a user to:
+- Add patient records to a file
+- View all patient records
+- Search for a specific patient
+- Save all data for a file to be exported
+
+The program will start by welcoming the user and providing a text-based menu for navigation.
+
+### Data Flow:
+
+- **Adding a Patient**:
+  - Enter patient name, ID, and medications.
+  - Add the patient to the `vector<Patient>`.
+  - Sort the vector.
+  
+- **Viewing All Patients**:
+  - Display all patients in the sorted order (alphabetically or by ID).
+  
+- **Searching for a Patient**:
+  - Prompt the user for the name or ID.
+  - Perform binary search to locate the patients (start with linear search then optimize with binary search).
+  - Display the medications if the patient is found.
+
+- **Saving and Loading Data**:
+  - Save the sorted vector to a file.
+  - Load the data back into the vector and sort it.
+
+### Data Types and Algorithms:
+This program will primarily use the **vector** data type and will include searching and sorting algorithms.
+
 ## To-Do List
 
 - [ ] **Initialize Program**
