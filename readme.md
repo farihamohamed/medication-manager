@@ -33,7 +33,7 @@
 
 ## Struct Definitions
 
-### `Medication`
+### `Patient`
 
 ```cpp
 struct Medication {
