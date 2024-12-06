@@ -21,9 +21,9 @@ void addPatient();
 
 // View All Patients 
 
-void viewAllPatients();
+//void viewAllPatients();
 
-/*struct Medication{
+struct Medication{
         string name;
         string dosage;
         string startDate;
@@ -45,51 +45,15 @@ void viewAllPatients();
     
     };
 
-*/
 
 
-int main()
-{
+int main(){
      
- /*  vector<Patient> patients = {
-        Patient("John" , "Doe", "12345", {
-            Medication("Ibuprofen", "200mg", "2024-11-01"),
-            Medication("Paracetamol", "500mg", "2024-11-05"),
-            Medication("Aspirin", "300mg", "2024-11-10")
-        }),
-        Patient("Jane" , "Smith", "67890", {
-            Medication("Metformin", "500mg", "2024-10-15"),
-            Medication("Atorvastatin", "20mg", "2024-10-20"),
-            Medication("Omeprazole", "40mg", "2024-10-25")
-        }),
-        Patient("Alice",  "Johnson", "11223", {
-            Medication("Lisinopril", "10mg", "2024-09-01"),
-            Medication("Levothyroxine", "50mcg", "2024-09-10"),
-            Medication("Albuterol", "90mcg", "2024-09-20"),
-        }),
-    };
  
-// Linear Search 
-string search; // name entered by user 
-cout << "Please enter a name" << endl; 
-cin >> search; 
-bool found = false; // flag used to check if name was found 
-int i = 0;
- while(!found && i < patients.size()){
-     if(search == patients[i].firstname){ 
-         cout << patients[i].id << endl;
-         found = true;
-     } 
-      
-    i++;
- }
- 
- if(!found)
-    cout << "We could not find this patient in our records" << endl;
-   */  
-   
-  int userChoice = welcomeUser(); // this will capture the user's choice from the menu and help will be used to know which function to call
 
+  int userChoice = welcomeUser(); // this will capture the user's choice from the menu and help will be used to know which function to call
+ 
+   
 
 
     return 0;
@@ -162,10 +126,10 @@ void addPatient(){
     cout << "Please enter the name you would like to enter" << endl; 
     
     cin >> name; 
+    cout << name << endl;
+   // patientNames.push_back(name); 
     
-    patientNames.push_back(name); 
-    
-    cout << patientNames[1];
+   // cout << patientNames[1];
     
 
     
