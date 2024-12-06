@@ -8,13 +8,16 @@
 </head>
 <body>
     <div id="navbar"> 
-    <h3>Welcome, Patient!</h3>
-    <h1>Medication Management</h1>
-    <button>Logout</button>
- 
+        <h1>Medication Management</h1>
+        <button class="logout-button">Logout</button>
 </div>
-<div id="chart-background"> 
-    <div id="chart">
+<main>
+    <section id="chart-background">
+        <div id="chart">
+            <div class="action-buttons">
+                <button id="add-btn">Add Medication</button>
+                <button id="delete-btn">Delete Selected</button>
+            </div>
     
     <table>
         <thead>
@@ -66,8 +69,9 @@
             </tr>
         </tbody>
     </table>
-  </div>
-</div>
+    </div>
+    </section>
+    </main>
     
 </body>
 </html>
