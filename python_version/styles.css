@@ -3,34 +3,35 @@
 }
 body{  
    font-family: 'Roboto', sans-serif;
-   background-color: #F4F4F9;
+   background: repeating-linear-gradient(135deg, #fff, #8BC9D0,#F8BD7F, #ffff);
    margin: 0;
    padding: 0;
-   color: #333;
+   color: black;
    margin: none;
   /* background-image: 
    linear-gradient(to bottom, rgba(241, 242, 247, 0.536), rgba(154, 233, 242, 0.73)),
    url('./medImage.jpg'); */ 
-   width: 100%;
-   height: 1000px;
+   min-height: 100vh;
  /*  background-size: cover; */ 
   /* filter: blur(4px); -- use this for popups */
 } 
 
 #navbar{
-   background-color: #264653;
+   background-color: rgba(255,255,255, 0.5);
    display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 20px;
-   color: white;
+   color: black;
 }
 
 
 #navbar h1{
    margin: 0;
    font-size: 1.8rem;
+
 }
+
 
 button{ 
    border: none;
@@ -84,7 +85,7 @@ button{
 #chart-background{
    margin: 20px auto;
    padding: 20px;
-   background-color: white;
+   background-color: rgba(255, 255, 255, 0.5);
    border-radius: 8px;
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
    max-width: 800px;
@@ -110,6 +111,6 @@ table tr:nth-child(even){
 }
 
 table th{
-   background-color: #2A9D8F;
+   background-color: rgba(42,157,143,0.5);
    color: white;
 }
