@@ -1,77 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
-</head>
-<body>
-    <div id="navbar"> 
-        <h1>Medication Management</h1>
-        <button class="logout-button">Logout</button>
-</div>
-<main>
-    <section id="chart-background">
-        <div id="chart">
-            <div class="action-buttons">
-                <button id="add-btn">Add Medication</button>
-                <button id="delete-btn">Delete Selected</button>
+  </head>
+  <body>
+    <div id="navbar">
+      <h1>Medication Management</h1>
+      <button class="logout-button">Logout</button>
+    </div>
+    <main>
+      <section id="add-popup">
+        <form>
+          <form action="" method="get" class="form-example">
+            <div class="text-input">
+              <label for="name">Enter your medication name: </label>
+              <input type="text" name="medName" id="medName" required />
             </div>
-    
-    <table>
-        <thead>
-            <tr>
+            <div class="text-input">
+              <label for="dosage">Enter the dosage: </label>
+              <input type="text" name="dosage" id="dosage" required />
+            </div>
+            <div class="text-input">
+              <label for="frequency">Enter the frequency: </label>
+              <input type="text" name="frequency" id="frequency" required />
+            </div>
+            <div class="date-input">
+              <label for="start">Enter the start date: </label>
+              <input type="date" name="start" id="start" required />
+            </div>
+            <div class="date-input">
+              <label for="end">Enter the end date: </label>
+              <input type="date" name="end" id="end"  />
+            </div>
+            <div class="submit-button">
+              <input type="submit" value="Add Medication!" />
+            </div>
+          </form>
+        </form>
+      </section>
+
+      <section id="chart-background">
+        <div id="chart">
+          <div class="action-buttons">
+            <button id="add-btn">Add Medication</button>
+            <button id="delete-btn">Delete Selected</button>
+          </div>
+
+          <table>
+            <thead>
+              <tr>
                 <th>Medication Name</th>
                 <td>Dosage</td>
                 <td>Start Date</td>
                 <td>End Date</td>
                 <td>Frequency</td>
-            </tr>
-        </thead>
+              </tr>
+            </thead>
 
-        <tbody>
-            <tr>
+            <tbody>
+              <tr>
                 <th>Ibuprofen</th>
                 <td>200mg</td>
                 <td>2023-11-20</td>
                 <td>2023-11-25</td>
                 <td>Every 4 hours</td>
-            </tr>
+              </tr>
 
-            <tr>
+              <tr>
                 <th>Ibuprofen</th>
                 <td>200mg</td>
                 <td>2023-11-20</td>
                 <td>2023-11-25</td>
                 <td>Every 4 hours</td>
-            </tr>
-            <tr>
+              </tr>
+              <tr>
                 <th>Ibuprofen</th>
                 <td>200mg</td>
                 <td>2023-11-20</td>
                 <td>2023-11-25</td>
                 <td>Every 4 hours</td>
-            </tr>
-            <tr>
+              </tr>
+              <tr>
                 <th>Ibuprofen</th>
                 <td>200mg</td>
                 <td>2023-11-20</td>
                 <td>2023-11-25</td>
                 <td>Every 4 hours</td>
-            </tr>
-            <tr>
+              </tr>
+              <tr>
                 <th>Ibuprofen</th>
                 <td>200mg</td>
                 <td>2023-11-20</td>
                 <td>2023-11-25</td>
                 <td>Every 4 hours</td>
-            </tr>
-        </tbody>
-    </table>
-    </div>
-    </section>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
     </main>
-    
-</body>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>

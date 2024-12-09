@@ -29,7 +29,7 @@ body{
 #navbar h1{
    margin: 0;
    font-size: 1.8rem;
-
+   font-weight: lighter;
 }
 
 
@@ -89,12 +89,14 @@ button{
    border-radius: 8px;
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
    max-width: 800px;
+   visibility: visible;
   }
 
 
 
 
 table {
+   
    border-collapse: collapse;
    width: 100%;
    margin-top: 10px;
@@ -104,6 +106,7 @@ table th, table td {
    border: 1px solid #ddd;
    padding: 8px;
    text-align: left;
+   font-weight: lighter;
 }
  
 table tr:nth-child(even){
@@ -111,6 +114,15 @@ table tr:nth-child(even){
 }
 
 table th{
-   background-color: rgba(42,157,143,0.5);
-   color: white;
+   color: black;
+}
+ thead tr:nth-of-type(1){
+   font-weight:bold;
+   background-color: #8BC9D0;
+}
+
+
+/* ADD MEDICATION FORM */ 
+#add-popup{
+   visibility: hidden;
 }
