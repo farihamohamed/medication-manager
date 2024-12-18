@@ -19,7 +19,7 @@
 */ 
  // Add Medication Function
  
- const addButton = document.getElementById("add-btn");
+ const addButton = document.getElementById("add-btn"); 
  const table = document.getElementById("chart-background"); 
  const popup = document.getElementById("add-popup");
  addButton.addEventListener("click", ()=>{
@@ -31,8 +31,13 @@
     button.style.backgroundColor = "pink";
     table.style.visibility = "hidden";
     newSection.style.visibility = "visible";
-    console.log("Hey!");
+
 
  }
 
-  
+  //Log out Button Function
+  const logoutButton = document.getElementById("logout-button");
+  logoutButton.addEventListener("click", ()=>{
+      window.location.replace('./login.html');
+      console.log("Working!");
+  })

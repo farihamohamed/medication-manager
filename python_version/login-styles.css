@@ -1,0 +1,90 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('./tree.jpg');
+    margin: 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-container{ 
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px; 
+    width: 50%;
+    background-color: rgba(240, 211, 161, 0.842); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+}
+
+form h1{
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 1.8rem;
+    margin: 0 auto 20px; 
+}
+
+form label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+form button{
+    width: 70%;
+    padding: 10px;
+    background-color: lightblue;
+    border-radius: 5px;
+   
+
+}
+
+form button:hover{
+    background-color: #0056b3;
+}
+
+
+.form-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+  
+  .form-links a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .form-links a:hover {
+    text-decoration: underline;
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .auth-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }

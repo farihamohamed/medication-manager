@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login-styles.css">
+</head>
+<body>
+ 
+    <div class="auth-container">
+        <!--Login Section-->
+        <div class="form-section"> 
+            <form action="" class="login-form" id="loginForm">
+            <h1>Login</h1>
+            <label for="username">Username or Email</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Label</label>
+            <input type="password"id="password" class="password" required>
+            <button type="submit">Login</button>
+                <div class="form-links">
+                <a href="#">Forgot Password?</a>
+                <a href="#">Sign Up</a>
+                 </div>
+            </form>
+    </div>
+     <!-- Signup Section -->
+     <div class="form-section">
+        
+        <form class="signup-form" id="signupForm">
+          <h1>Sign Up</h1>
+          <label for="signup-username">Username</label>
+          <input type="text" id="signup-username" name="signup-username" required placeholder="Enter your username">
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" name="signup-email" required placeholder="Enter your email">
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" name="signup-password" required placeholder="Enter your password">
+          <button type="submit">Sign Up</button>
+          <div class="form-links">
+            <a href="#">Already have an account? Login</a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+</body>
+</html>
