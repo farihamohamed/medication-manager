@@ -1,5 +1,5 @@
 from flask import Flask , request, jsonify 
-
+from db import get_user, add_user, init_db
 
 app  = Flask(__name__)
 
@@ -16,10 +16,18 @@ def login():
     username = data.get('username')
     password = data.get('password')
     
+    
 #Validate input
     if not username or not password:
         return jsonify({"error": "Username and password are required"}), 400
 
+
+ 
+#Connect to database 
+    init_db()
+
+#Get user
+    get_user(username)
 
 #Authenticate user
     user = users.get(username)
@@ -27,12 +35,9 @@ def login():
         return jsonify({"error": "Invalid Credentials!"}), 401
 
 
-
 #Respond with user data 
-    return jsonify({
-        "name" : user['name'],
-        "medications" : user['medications']
-    })   
+
+    return jsonify({"name" : user['name'], "medications" : user['medications']})   
     
 
 if __name__ == '__main__':
